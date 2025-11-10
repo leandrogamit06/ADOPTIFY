@@ -33,6 +33,7 @@ form.addEventListener('submit', function(e) {
   // Simulate loading before redirect
   setTimeout(() => {
     alert("✅ Login successful! Welcome back, " + username + "!");
-    window.location.href = "Homepage.html";
+    window.location.href = "index.html";
   }, 2500);
 });
+
