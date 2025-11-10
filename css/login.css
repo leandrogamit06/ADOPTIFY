@@ -108,48 +108,46 @@ input {
   color: #111;
 }
 
-/* ===== Buttons ===== */
+/* ===== Buttons (Perfectly Aligned) ===== */
 nav.actions {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 12px;
-  margin-top: 5px;
+  gap: 20px;
+  margin-top: 15px;
 }
 
-input[type="submit"],
+button.login-btn,
 a.back {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 42px;
-  width: 130px;
-  border-radius: 25px;
-  font-weight: bold;
-  font-size: 15px;
-  text-decoration: none;
+  display: inline-block;
   text-align: center;
-  transition: 0.3s ease;
-  box-sizing: border-box;
+  padding: 12px 45px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  line-height: 1;
 }
 
-input[type="submit"] {
+/* LOGIN button */
+button.login-btn {
   background: #2e8b57;
   color: white;
   border: 2px solid transparent;
-  cursor: pointer;
 }
 
-input[type="submit"]:hover {
+button.login-btn:hover {
   background: #3cb371;
   transform: translateY(-2px);
 }
 
+/* BACK button */
 a.back {
   background: white;
   color: #000;
   border: 2px solid #111;
-  line-height: 1;
 }
 
 a.back:hover {
